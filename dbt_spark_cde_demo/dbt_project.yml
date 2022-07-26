@@ -14,7 +14,7 @@
 #  * limitations under the License.
 #  */
 
-name: 'dbt_spark_cde_demo'
+name: 'spark_cde_demo'
 version: '1.1.0'
 config-version: 2
 
@@ -27,19 +27,19 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-target-path: "target" 
-clean-targets:         
+target-path: "target"
+clean-targets:
   - "target"
   - "dbt_packages"
 
 
 seeds:
-  dbt_spark_cde_demo:
+  spark_cde_demo:
     reference:
       +schema: reference
 
 models:
-  dbt_spark_cde_demo:
+  spark_cde_demo:
     +materialized: view
     staging:
       covid:
