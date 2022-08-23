@@ -3,9 +3,9 @@ dbt_spark_cde_demo:
     dev_spark_cde:
       type: spark_cde
       method: cde
-      schema: "{{ env_var('DBT_SCHEMA') }}"
-      user: "{{ env_var('DBT_USER') }}"
-      password: "{{ env_var('DBT_PASSWORD') }}"
-      auth_endpoint: "{{ env_var('DBT_AUTH_ENDPOINT') }}"
-      host: "{{ env_var('DBT_HOST') }}"
+      schema: "{{ env_var('DBT_SPARK_CDE_SCHEMA') }}"
+      user: "{{ env_var('DBT_SPARK_CDE_USER') }}"
+      password: "{{ env_var('DBT_SPARK_CDE_PASSWORD') }}"
+      auth_endpoint: "{{ env_var('DBT_SPARK_CDE_AUTH_ENDPOINT') }}"
+      host: "{{ env_var('DBT_SPARK_CDE_HOST') }}"
   target: dev_spark_cde
